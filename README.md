@@ -1,2 +1,2 @@
 # fizzbuzz-fsharp
-FizzBuzz Kata step by step using F#
+FizzBuzz Kata examples to learn F#
