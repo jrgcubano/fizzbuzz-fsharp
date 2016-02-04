@@ -1,20 +1,11 @@
 let fizzbuzz_number n =
-  let ``is fizz?`` n = n % 3 = 0
-  let ``is buzz?`` n = n % 5 = 0
-  let ``is fizzbuzz?`` n = (``is fizz?`` n) && (``is buzz?`` n)
-
-  if ``is fizzbuzz?`` n then
+  if n % 3 = 0 && n % 5 = 0 then
     "FizzBuzz"
-  else if ``is fizz?`` n then
+  else if n % 3 = 0 then
     "Fizz"
-  else if ``is buzz?`` n then
+  else if n % 5 = 0 then
     "Buzz"
   else
     sprintf "%d" n
 	
-printfn "%b" ((fizzbuzz_number 1) = "1")
-printfn "%b" ((fizzbuzz_number 3) = "Fizz")
-printfn "%b" ((fizzbuzz_number 5) = "Buzz")
-printfn "%b" ((fizzbuzz_number 12) = "Fizz")
-printfn "%b" ((fizzbuzz_number 15) = "FizzBuzz")
-printfn "%b" ((fizzbuzz_number 17) = "17")
+fizzbuzz_number 10
